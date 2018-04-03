@@ -22,3 +22,20 @@ function gridSize() {
 
 gridSize();
 
+/* Write a new function called totalCells() which will return the 
+total number of cells in your grid. For this grid, it should return 100, 
+but again make sure that is a calculated value and not just a number 
+you type in for your function to return. We want to make all the other 
+lighthouse operators jealous. */
+
+function totalCells() {
+  let y = GRID.length;
+  let firstColumn = GRID[0];
+  let x = firstColumn.length;
+  let total = x * y;
+  return total;
+}
+
+totalCells();
+
+
