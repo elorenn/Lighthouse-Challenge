@@ -64,7 +64,8 @@ in the form of 'C7' and return a true or a false boolean value depending on
 whether there is a rock in that cell or not. (Example: isRock('D1'); would return true) */
 
 function isRock(coordinate) {
-  return lightCell(coordinate) == '^' ? true : false;
+  // return lightCell(coordinate) == '^' ? true : false;
+  return Boolean(lightCell(coordinate) == '^');
 }
 
 
